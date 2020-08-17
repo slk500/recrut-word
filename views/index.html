@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>App</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="alert alert-info" style="margin-top:20px">
+        Welcome to Application.
+    </div>
+
+    <form method="get" action="result.php">
+        <div class="form-group row">
+
+            <div class="col-sm-6 offset-3">
+                <label for="text" style="text-align: left">Text</label>
+                <textarea
+                        class="form-control" id="text" name="text" style="height: 150px;"
+                        minlength="4" maxlength="2000" required placeholder="Please Enter Text"
+                ></textarea>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-6 offset-sm-3">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

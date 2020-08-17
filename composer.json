@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ],
+    "require": {},
+    "require-dev": {
+      "phpunit/phpunit": "^9.3"
+    }
+  },
+  "require": {
+    "ext-mysqli": "*"
+  }
+}
