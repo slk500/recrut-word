@@ -39,7 +39,7 @@ function sortByWordCountDESCThenByWordASC(array $array): array
     return array_combine($word_count, $word);
 }
 
-function normalize(array $array)
+function normalize(array $array): array
 {
     return array_map(function ($word, $count) {
         return [
@@ -50,7 +50,7 @@ function normalize(array $array)
     }, array_keys($array), $array);
 }
 
-function addStars(array $array)
+function addStars(array $array): array
 {
     $counter = 1;
     foreach ($array as &$element) {
@@ -73,7 +73,7 @@ function addStars(array $array)
     return $array;
 }
 
-function transform(string $string)
+function transform(string $string): array
 {
     return compose(
         'removePunctuationMarks',

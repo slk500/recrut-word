@@ -3,7 +3,7 @@ version: '3'
 services:
     web:
         image: nginx:latest
-        container_name: nginx
+        container_name: nginx-recrut-word
         ports:
             - "8080:80"
         volumes:
@@ -16,7 +16,7 @@ services:
             - ./:/code
     database:
         image: mysql
-        container_name: database
+        container_name: database-recrut-word
         volumes:
             - ./mysql_init:/docker-entrypoint-initdb.d
         ports:
