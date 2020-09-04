@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 final class Database
 {
-    public mysqli $mysqli;
+    private mysqli $mysqli;
 
     public function __construct()
     {
